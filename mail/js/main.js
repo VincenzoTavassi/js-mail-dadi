@@ -37,11 +37,12 @@ document.getElementById('controlla').addEventListener('click', function () {
 })
 
 // EVENTO SUL CLICK DEL PULSANTE PER OTTENERE AUTORIZZAZIONE
-
 document.getElementById('autorizza').addEventListener('click', function () {
     // OTTENGO IL VALORE INSERITO DALL'UTENTE 
     let nuovoUtente = document.getElementById('email-da-autorizzare').value;
+    // AGGIUNGO IL VALORE ALL'ARRAY DI E-MAIL 
     listaEmail.push(nuovoUtente);
+    // MESSAGGIO DI CONFERMA
     alert(`Email ${nuovoUtente} inserita!`)
 
 })
